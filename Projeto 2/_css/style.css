@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #cb5382;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 3px;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: .8s;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding: 50px;
+    text-align: center;
+}
+
+section#home {
+    color: #fff;
+    background-image: url(/_img/decoracao-de-sorveteria-heading.jpg);
+    text-shadow: 0.1em 0.1em #000;    
+}
+
+section#home h2{
+    font-size: 30px;
+}
+
+section#home p{
+    font-size: 20px;
+}

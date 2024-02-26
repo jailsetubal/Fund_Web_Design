@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 
 body {
@@ -10,15 +11,14 @@ header {
     display: flex;
     color: #fff;
     text-align: center;
+    justify-content: center;
 }
 
 header img{
-    padding-left: 10px;
     padding-top: 10px;
     border-radius: 50px;
 }
 header nav ul {
-    padding-left: 40em;
     padding-top: 20px;
     list-style: none;
 }
@@ -42,23 +42,49 @@ header nav ul li a:hover{
 }
 
 .menu_Secundario ul{
-    padding-left: 40em;
-    padding-top: 20px;
+    text-align: center;
+    display: inline;
     list-style: none;
 }
 
 .menu_Secundario ul li{
-    margin-right: 20px;
+    padding: 20px;
+    background-color: #333;
+}
+
+.menu_Secundario ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 21px;    
+}
+
+.menu_Secundario ul li a:hover{
+    background-color: #fff;
+    color: #333;
 }
 
 .carousel {
+    background-image: url(../_img/petshop-rock-1024x538.png.webp);
     display: flex;
-    overflow: hidden;
-    margin: 20px auto;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: end;
+    align-items: center;
+    justify-content: end;
+}
+
+.carousel div{
+    font-size: 30px;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 300px;
+    color: #333;
 }
 
 .carousel img {
-    height: 200px;
+
 }
 
 .content {
@@ -87,4 +113,69 @@ footer {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+}
+
+.content .produtos{
+    display: flex;
+}
+
+.content .produtos .container{
+    margin-right: 30px;
+    flex-direction: column;
+    width: 300px;
+}
+
+.content .produtos .container button{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.content .produtos .container button:hover{
+    background-color: white; 
+    color: black; 
+    border: 1px solid #04AA6D;
+}
+
+.content .produtos .container div img:hover{
+    transition: 0.8s;
+    transform: scale(1.1);
+}
+
+
+.titulo1 {
+    text-align: start;
+    text-transform: uppercase;
+    padding: 20px 0 20px 50px;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #333;
+    margin-bottom: 5px;
+}
+
+.beneficios div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 10px;
+}
+
+.img_banner{
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
 }
